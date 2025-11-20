@@ -1,13 +1,12 @@
+# -------------------- IMPORTS --------------------
 import requests
 
-# Transaction identifier (metadata only)
+# -------------------- CONFIG --------------------
 tx_hash = "0xa536035bcf5c36976b989e025339f6cc0b3943bc60171de75a224d19ac80000d"
-
-# Host for the deployed API (or local)
-host = "127.0.0.1:8000"  # Replace if deployed
+host = "127.0.0.1:8000"  # change if deployed elsewhere
 url = f"http://{host}/predict"
 
-# Transaction features (only the model features)
+# -------------------- TRANSACTION FEATURES --------------------
 transaction_features = {
     "Hour": 14,
     "total_received": 0.0,
@@ -18,25 +17,28 @@ transaction_features = {
     "has_activity": 1
 }
 
-# Merge tx_hash outside the features
+# Merge tx_hash outside the model features
 payload = {"tx_hash": tx_hash, **transaction_features}
 
-# Send request
+# -------------------- SEND REQUEST --------------------
 response = requests.post(url, json=payload).json()
 print("API Response:", response)
 
-# Extract probability
+# -------------------- HUMAN-READABLE INTERPRETATION --------------------
 prob = response["fraud_probability"]
+classification = response.get("classification", "Unknown")
+message = response.get("message", "")
 
-# Human-readable interpretation
+print("\nINTERPRETATION:")
+print(f"Transaction Hash: {tx_hash}")
+print(f"Fraud Probability: {prob:.2f}")
+print(f"Classification: {classification}")
+print(f"Message: {message}\n")
+
+# Optional additional action based on risk
 if prob >= 0.85:
-    print(f"⚠️ Transaction {tx_hash} flagged as HIGH RISK.")
     print("> Action: Immediately block or review transaction.\n")
-
 elif prob >= 0.55:
-    print(f"🔶 Transaction {tx_hash} flagged as MEDIUM RISK.")
     print("> Action: Increase monitoring or request additional verification.\n")
-
 else:
-    print(f"✅ Transaction {tx_hash} classified as LOW RISK.")
     print("> Action: Normal processing.\n")
