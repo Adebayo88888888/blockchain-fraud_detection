@@ -9,11 +9,11 @@ url = f"http://{host}/predict"
 # -------------------- TRANSACTION FEATURES --------------------
 transaction_features = {
     "Hour": 14,
-    "total_received": 0.0,
+    "total_received": 300,
     "mean_value_received": 0.0,
-    "time_diff_first_last_received": 0.0,
-    "total_tx_sent": 3,
-    "total_tx_sent_unique": 2,
+   "time_diff_first_last_received": 200.0,
+    "total_tx_sent": 40,
+    "total_tx_sent_unique":16,
     "has_activity": 1
 }
 
