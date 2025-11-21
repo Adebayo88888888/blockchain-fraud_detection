@@ -18,7 +18,7 @@ COPY predict_service_api.py .
 COPY trained_xgb_model.joblib .
 
 # Expose FastAPI port
-EXPOSE 8000
+EXPOSE 8080
 
 # Run the FastAPI service
-CMD ["uvicorn", "predict_service_api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "predict_service_api:app", "--host", "0.0.0.0", "--port", "8080"]

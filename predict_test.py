@@ -3,7 +3,7 @@ import requests
 
 # -------------------- CONFIG --------------------
 tx_hash = "0xa536035bcf5c36976b989e025339f6cc0b3943bc60171de75a224d19ac80000d"
-host = "127.0.0.1:8000"  # change if deployed elsewhere
+host = "Eth-fraud-detection-env.eba-ts7tk7mw.eu-west-1.elasticbeanstalk.com"  # change if deployed elsewhere
 url = f"http://{host}/predict"
 
 # -------------------- TRANSACTION FEATURES --------------------
