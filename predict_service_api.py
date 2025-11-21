@@ -61,13 +61,13 @@ async def predict(request: Request):
     # Human-readable risk classification
     if prob >= 0.85:
         classification = "High Risk"
-        message = "⚠️ Transaction shows very strong fraud indicators. Immediate action recommended."
+        message = "Transaction shows very strong fraud indicators. Immediate action recommended."
     elif prob >= 0.55:
         classification = "Medium Risk"
-        message = "🔶 Transaction shows moderate suspicious activity. Monitor closely."
+        message = "Transaction shows moderate suspicious activity. Monitor closely."
     else:
         classification = "Low Risk"
-        message = "✅ Transaction appears normal. No strong fraud signals detected."
+        message = "Transaction appears normal. No strong fraud signals detected."
 
     # Build response
     result = {
@@ -83,4 +83,4 @@ async def predict(request: Request):
 # -------------------- DEV SERVER --------------------
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=False)
+    uvicorn.run(app, host="0.0.0.0", port=8080, reload=False)
