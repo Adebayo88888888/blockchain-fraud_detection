@@ -92,4 +92,8 @@ By analyzing on-chain behavioral patterns, it delivers real-time fraud scoring s
 
 - Security analytics platforms
 
-This system is a step toward creating safer, more transparent blockchain ecosystems powered by data-driven intelligence.
+This system is a step toward creating safer, more transparent blockchain ecosystems powered by data-driven intelligence. 
+
+
+
+Thanks for exploring...
