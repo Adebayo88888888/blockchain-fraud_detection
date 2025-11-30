@@ -15,6 +15,7 @@ The entire solution is deployed as a Dockerized **FastAPI** application running 
 
 ## 🔍 Problem Statement
 
+
 Fraudulent activity on public blockchains is rising and increasingly complex.  
 Manual identification is inconsistent and not scalable.
 
