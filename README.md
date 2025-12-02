@@ -1,4 +1,4 @@
-# 🚨 Ethereum Fraud Detection – On-Chain ML Classifier  
+# 🚨 Ethereum Fraud Detection. On-Chain ML Classifier  
 
 Machine Learning Model • FastAPI • Docker • AWS Elastic Beanstalk
 
