@@ -79,7 +79,7 @@ These engineered features feed directly into the ML model.
   * Cloud Deployment: AWS Elastic Beanstalk
 
 
-🏁 Conclusion
+## Conclusion
 
 This Ethereum fraud detection platform provides a fully operational, cloud-deployed machine learning pipeline.
 By analyzing on-chain behavioral patterns, it delivers real-time fraud scoring suitable for:
