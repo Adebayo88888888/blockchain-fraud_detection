@@ -55,7 +55,7 @@ These engineered features feed directly into the ML model.
 
 ---
 
-## Model Summary
+### Model Summary
 
 - **Model**: XGBoost Classifier  
 - **Output**:  
