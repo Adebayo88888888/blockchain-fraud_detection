@@ -95,5 +95,4 @@ By analyzing on-chain behavioral patterns, it delivers real-time fraud scoring s
 This system is a step toward creating safer, more transparent blockchain ecosystems powered by data-driven intelligence. 
 
 
-
 Thanks for exploring.......
