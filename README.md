@@ -23,7 +23,7 @@ This project provides an automated fraud detection pipeline that:
 - Flags suspicious Ethereum wallet behavior  
 - Assigns real-time fraud probability scores  
 - Enables monitoring dashboards and API integrations  
-- Supports investigators, analysts, and automated risk systems  
+- Supports investigators, analysts, and automated risk systems.
 
 ---
 
